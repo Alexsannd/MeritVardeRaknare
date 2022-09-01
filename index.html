@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table>
+    <tr class="TableTop">
+        <td class="TableTop" id="year">ÅK</td>
+        <td class="TableTop" id="course">Kurs</td>
+        <td class="TableTop">Poäng</td>
+        <td class="TableTop">Betyg</td>
+        <td class="TableTop">Siffervärde</td>
+        <td class="TableTop">Betygsvärde</td>
+        <td class="TableTop">Extra information</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td class="course">Svenska 1</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn0">-</button>
+            <div id="myDropdown0" class="dropdown-content">
+                <a id="0A" onclick="selectGrade(this.id)">A</a>
+                <a id="0B" onclick="selectGrade(this.id)">B</a>
+                <a id="0C" onclick="selectGrade(this.id)">C</a>
+                <a id="0D" onclick="selectGrade(this.id)">D</a>
+                <a id="0E" onclick="selectGrade(this.id)">E</a>
+                <a id="0F" onclick="selectGrade(this.id)">F</a>
+                <a id="0-" onclick="selectGrade(this.id)">-</a>
+        </div></td>
+        <td id="numberValue0">-</td>
+        <td id="gradeValue0">-</td>
+        <td>Minst E för examen</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td class="course">Engelska 5</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn1">-</button>
+            <div id="myDropdown1" class="dropdown-content">
+                <a id="1A" onclick="selectGrade(this.id)">A</a>
+                <a id="1B" onclick="selectGrade(this.id)">B</a>
+                <a id="1C" onclick="selectGrade(this.id)">C</a>
+                <a id="1D" onclick="selectGrade(this.id)">D</a>
+                <a id="1E" onclick="selectGrade(this.id)">E</a>
+                <a id="1F" onclick="selectGrade(this.id)">F</a>
+                <a id="1-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue1">-</td>
+        <td id="gradeValue1">-</td>
+        <td>Minst E för examen</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td class="course">Matematik 1</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn2">-</button>
+            <div id="myDropdown2" class="dropdown-content">
+                <a id="2A" onclick="selectGrade(this.id)">A</a>
+                <a id="2B" onclick="selectGrade(this.id)">B</a>
+                <a id="2C" onclick="selectGrade(this.id)">C</a>
+                <a id="2D" onclick="selectGrade(this.id)">D</a>
+                <a id="2E" onclick="selectGrade(this.id)">E</a>
+                <a id="2F" onclick="selectGrade(this.id)">F</a>
+                <a id="2-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue2">-</td>
+        <td id="gradeValue2">-</td>
+        <td>Minst E för examen</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td class="course">Matematik 2</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn3">-</button>
+            <div id="myDropdown3" class="dropdown-content">
+                <a id="3A" onclick="selectGrade(this.id)">A</a>
+                <a id="3B" onclick="selectGrade(this.id)">B</a>
+                <a id="3C" onclick="selectGrade(this.id)">C</a>
+                <a id="3D" onclick="selectGrade(this.id)">D</a>
+                <a id="3E" onclick="selectGrade(this.id)">E</a>
+                <a id="3F" onclick="selectGrade(this.id)">F</a>
+                <a id="3-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue3">-</td>
+        <td id="gradeValue3">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td class="course">Idrott och hälsa 1</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn4">-</button>
+            <div id="myDropdown4" class="dropdown-content">
+                <a id="4A" onclick="selectGrade(this.id)">A</a>
+                <a id="4B" onclick="selectGrade(this.id)">B</a>
+                <a id="4C" onclick="selectGrade(this.id)">C</a>
+                <a id="4D" onclick="selectGrade(this.id)">D</a>
+                <a id="4E" onclick="selectGrade(this.id)">E</a>
+                <a id="4F" onclick="selectGrade(this.id)">F</a>
+                <a id="4-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue4">-</td>
+        <td id="gradeValue4">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td class="course">Samhällskunskap 1</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn5">-</button>
+            <div id="myDropdown5" class="dropdown-content">
+                <a id="5A" onclick="selectGrade(this.id)">A</a>
+                <a id="5B" onclick="selectGrade(this.id)">B</a>
+                <a id="5C" onclick="selectGrade(this.id)">C</a>
+                <a id="5D" onclick="selectGrade(this.id)">D</a>
+                <a id="5E" onclick="selectGrade(this.id)">E</a>
+                <a id="5F" onclick="selectGrade(this.id)">F</a>
+                <a id="5-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue5">-</td>
+        <td id="gradeValue5">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td class="course">Teknik 1</td>
+        <td>150</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn6">-</button>
+            <div id="myDropdown6" class="dropdown-content">
+                <a id="6AL" onclick="selectGrade(this.id)">A</a>
+                <a id="6BL" onclick="selectGrade(this.id)">B</a>
+                <a id="6CL" onclick="selectGrade(this.id)">C</a>
+                <a id="6DL" onclick="selectGrade(this.id)">D</a>
+                <a id="6EL" onclick="selectGrade(this.id)">E</a>
+                <a id="6F" onclick="selectGrade(this.id)">F</a>
+                <a id="6-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue6">-</td>
+        <td id="gradeValue6">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1 & 2</td>
+        <td class="course">Fysik 1</td>
+        <td>150</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn7">-</button>
+            <div id="myDropdown7" class="dropdown-content">
+                <a id="7AL" onclick="selectGrade(this.id)">A</a>
+                <a id="7BL" onclick="selectGrade(this.id)">B</a>
+                <a id="7CL" onclick="selectGrade(this.id)">C</a>
+                <a id="7DL" onclick="selectGrade(this.id)">D</a>
+                <a id="7EL" onclick="selectGrade(this.id)">E</a>
+                <a id="7F" onclick="selectGrade(this.id)">F</a>
+                <a id="7-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue7">-</td>
+        <td id="gradeValue7">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td class="course">Svenska 2</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn8">-</button>
+            <div id="myDropdown8" class="dropdown-content">
+                <a id="8A" onclick="selectGrade(this.id)">A</a>
+                <a id="8B" onclick="selectGrade(this.id)">B</a>
+                <a id="8C" onclick="selectGrade(this.id)">C</a>
+                <a id="8D" onclick="selectGrade(this.id)">D</a>
+                <a id="8E" onclick="selectGrade(this.id)">E</a>
+                <a id="8F" onclick="selectGrade(this.id)">F</a>
+                <a id="8-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue8">-</td>
+        <td id="gradeValue8">-</td>
+        <td>Minst E för examen</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td class="course">Engelska 6</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn9">-</button>
+            <div id="myDropdown9" class="dropdown-content">
+                <a id="9A" onclick="selectGrade(this.id)">A</a>
+                <a id="9B" onclick="selectGrade(this.id)">B</a>
+                <a id="9C" onclick="selectGrade(this.id)">C</a>
+                <a id="9D" onclick="selectGrade(this.id)">D</a>
+                <a id="9E" onclick="selectGrade(this.id)">E</a>
+                <a id="9F" onclick="selectGrade(this.id)">F</a>
+                <a id="9-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue9">-</td>
+        <td id="gradeValue9">-</td>
+        <td>Minst E för examen</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td class="course">Matematik 3</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn10">-</button>
+            <div id="myDropdown10" class="dropdown-content">
+                <a id="10A" onclick="selectGrade(this.id)">A</a>
+                <a id="10B" onclick="selectGrade(this.id)">B</a>
+                <a id="10C" onclick="selectGrade(this.id)">C</a>
+                <a id="10D" onclick="selectGrade(this.id)">D</a>
+                <a id="10E" onclick="selectGrade(this.id)">E</a>
+                <a id="10F" onclick="selectGrade(this.id)">F</a>
+                <a id="10-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue10">-</td>
+        <td id="gradeValue10">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td class="course">Entreprenörskap</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn11">-</button>
+            <div id="myDropdown11" class="dropdown-content">
+                <a id="11A" onclick="selectGrade(this.id)">A</a>
+                <a id="11B" onclick="selectGrade(this.id)">B</a>
+                <a id="11C" onclick="selectGrade(this.id)">C</a>
+                <a id="11D" onclick="selectGrade(this.id)">D</a>
+                <a id="11E" onclick="selectGrade(this.id)">E</a>
+                <a id="11F" onclick="selectGrade(this.id)">F</a>
+                <a id="11-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue11">-</td>
+        <td id="gradeValue11">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td class="course">Dator- och nätverksteknik</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn12">-</button>
+            <div id="myDropdown12" class="dropdown-content">
+                <a id="12A" onclick="selectGrade(this.id)">A</a>
+                <a id="12B" onclick="selectGrade(this.id)">B</a>
+                <a id="12C" onclick="selectGrade(this.id)">C</a>
+                <a id="12D" onclick="selectGrade(this.id)">D</a>
+                <a id="12E" onclick="selectGrade(this.id)">E</a>
+                <a id="12F" onclick="selectGrade(this.id)">F</a>
+                <a id="12-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue12">-</td>
+        <td id="gradeValue12">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td class="course">Programmering 1</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn13">-</button>
+            <div id="myDropdown13" class="dropdown-content">
+                <a id="13A" onclick="selectGrade(this.id)">A</a>
+                <a id="13B" onclick="selectGrade(this.id)">B</a>
+                <a id="13C" onclick="selectGrade(this.id)">C</a>
+                <a id="13D" onclick="selectGrade(this.id)">D</a>
+                <a id="13E" onclick="selectGrade(this.id)">E</a>
+                <a id="13F" onclick="selectGrade(this.id)">F</a>
+                <a id="13-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue13">-</td>
+        <td id="gradeValue13">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td class="course">Webbutveckling</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn14">-</button>
+            <div id="myDropdown14" class="dropdown-content">
+                <a id="14A" onclick="selectGrade(this.id)">A</a>
+                <a id="14B" onclick="selectGrade(this.id)">B</a>
+                <a id="14C" onclick="selectGrade(this.id)">C</a>
+                <a id="14D" onclick="selectGrade(this.id)">D</a>
+                <a id="14E" onclick="selectGrade(this.id)">E</a>
+                <a id="14F" onclick="selectGrade(this.id)">F</a>
+                <a id="14-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue14">-</td>
+        <td id="gradeValue14">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td class="course">Svenska 3</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn15">-</button>
+            <div id="myDropdown15" class="dropdown-content">
+                <a id="15A" onclick="selectGrade(this.id)">A</a>
+                <a id="15B" onclick="selectGrade(this.id)">B</a>
+                <a id="15C" onclick="selectGrade(this.id)">C</a>
+                <a id="15D" onclick="selectGrade(this.id)">D</a>
+                <a id="15E" onclick="selectGrade(this.id)">E</a>
+                <a id="15F" onclick="selectGrade(this.id)">F</a>
+                <a id="15-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue15">-</td>
+        <td id="gradeValue15">-</td>
+        <td>Minst E för examen</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td class="course">Historia</td>
+        <td>50</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn16">-</button>
+            <div id="myDropdown16" class="dropdown-content">
+                <a id="16AS" onclick="selectGrade(this.id)">A</a>
+                <a id="16BS" onclick="selectGrade(this.id)">B</a>
+                <a id="16CS" onclick="selectGrade(this.id)">C</a>
+                <a id="16DS" onclick="selectGrade(this.id)">D</a>
+                <a id="16ES" onclick="selectGrade(this.id)">E</a>
+                <a id="16F" onclick="selectGrade(this.id)">F</a>
+                <a id="16-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue16">-</td>
+        <td id="gradeValue16">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td class="course">Religionskunskap</td>
+        <td>50</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn17">-</button>
+            <div id="myDropdown17" class="dropdown-content">
+                <a id="17AS" onclick="selectGrade(this.id)">A</a>
+                <a id="17BS" onclick="selectGrade(this.id)">B</a>
+                <a id="17CS" onclick="selectGrade(this.id)">C</a>
+                <a id="17DS" onclick="selectGrade(this.id)">D</a>
+                <a id="17ES" onclick="selectGrade(this.id)">E</a>
+                <a id="17F" onclick="selectGrade(this.id)">F</a>
+                <a id="17-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue17">-</td>
+        <td id="gradeValue17">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td class="course">Kemi</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn18">-</button>
+            <div id="myDropdown18" class="dropdown-content">
+                <a id="18A" onclick="selectGrade(this.id)">A</a>
+                <a id="18B" onclick="selectGrade(this.id)">B</a>
+                <a id="18C" onclick="selectGrade(this.id)">C</a>
+                <a id="18D" onclick="selectGrade(this.id)">D</a>
+                <a id="18E" onclick="selectGrade(this.id)">E</a>
+                <a id="18F" onclick="selectGrade(this.id)">F</a>
+                <a id="18-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue18">-</td>
+        <td id="gradeValue18">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td class="course">Programmering 2</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn19">-</button>
+            <div id="myDropdown19" class="dropdown-content">
+                <a id="19A" onclick="selectGrade(this.id)">A</a>
+                <a id="19B" onclick="selectGrade(this.id)">B</a>
+                <a id="19C" onclick="selectGrade(this.id)">C</a>
+                <a id="19D" onclick="selectGrade(this.id)">D</a>
+                <a id="19E" onclick="selectGrade(this.id)">E</a>
+                <a id="19F" onclick="selectGrade(this.id)">F</a>
+                <a id="19-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue19">-</td>
+        <td id="gradeValue19">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td class="course">Digitalt skapande eller Fysik 2</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn20">-</button>
+            <div id="myDropdown20" class="dropdown-content">
+                <a id="20A" onclick="selectGrade(this.id)">A</a>
+                <a id="20B" onclick="selectGrade(this.id)">B</a>
+                <a id="20C" onclick="selectGrade(this.id)">C</a>
+                <a id="20D" onclick="selectGrade(this.id)">D</a>
+                <a id="20E" onclick="selectGrade(this.id)">E</a>
+                <a id="20F" onclick="selectGrade(this.id)">F</a>
+                <a id="20-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue20">-</td>
+        <td id="gradeValue20">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td class="course">Gränssnittsdesign eller Matematik 4</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn21">-</button>
+            <div id="myDropdown21" class="dropdown-content">
+                <a id="21A" onclick="selectGrade(this.id)">A</a>
+                <a id="21B" onclick="selectGrade(this.id)">B</a>
+                <a id="21C" onclick="selectGrade(this.id)">C</a>
+                <a id="21D" onclick="selectGrade(this.id)">D</a>
+                <a id="21E" onclick="selectGrade(this.id)">E</a>
+                <a id="21F" onclick="selectGrade(this.id)">F</a>
+                <a id="21-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue21">-</td>
+        <td id="gradeValue21">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1 / 2 / 3</td>
+        <td class="course">Individuellt val 1</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn22">-</button>
+            <div id="myDropdown22" class="dropdown-content">
+                <a id="22A" onclick="selectGrade(this.id)">A</a>
+                <a id="22B" onclick="selectGrade(this.id)">B</a>
+                <a id="22C" onclick="selectGrade(this.id)">C</a>
+                <a id="22D" onclick="selectGrade(this.id)">D</a>
+                <a id="22E" onclick="selectGrade(this.id)">E</a>
+                <a id="22F" onclick="selectGrade(this.id)">F</a>
+                <a id="22-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue22">-</td>
+        <td id="gradeValue22">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1 / 2 / 3</td>
+        <td class="course">Individuellt val 2</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn23">-</button>
+            <div id="myDropdown23" class="dropdown-content">
+                <a id="23A" onclick="selectGrade(this.id)">A</a>
+                <a id="23B" onclick="selectGrade(this.id)">B</a>
+                <a id="23C" onclick="selectGrade(this.id)">C</a>
+                <a id="23D" onclick="selectGrade(this.id)">D</a>
+                <a id="23E" onclick="selectGrade(this.id)">E</a>
+                <a id="23F" onclick="selectGrade(this.id)">F</a>
+                <a id="23-" onclick="selectGrade(this.id)">-</a>
+            </div></td>
+        <td id="numberValue23">-</td>
+        <td id="gradeValue23">-</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td class="course">Gymnasiearbete</td>
+        <td>100</td>
+        <td><button onclick="myFunction(this.id)" class="dropbtn" id="gradeBtn24">-</button>
+            <div id="myDropdown24" class="dropdown-content">
+                <a id="24EG" onclick="selectGrade(this.id)">E</a>
+                <a id="24FG" onclick="selectGrade(this.id)">F</a>
+            </div></td>
+        <td id="numberValue24"></td>
+        <td id="gradeValue24"></td>
+        <td></td>
+    </tr>
+    <tr id="bottomRow">
+        <td></td>
+        <td class="course"></td>
+        <td></td>
+        <td></td>
+        <td id="numberValue25">-</td>
+        <td id="gradeValue25">-</td>
+        <td></td>
+    </tr>
+
+</table>
+<script src="script.js"></script>
+</body>
+</html>
