@@ -1,14 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .TableTop {
     font-family: Arial;
     font-weight: bold;
-    border: 1px solid black;
+    border: 1px solid white;
     border-collapse: collapse;
     padding: 10px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
+    background-color: #bdd0e7;
 
 }
+#footer {
+    background-color: grey;
+    height: 120px;
+    margin-top: 100px;
+}
+#head {
+    background-color: #87CEEB;
+    height: 50px;
+    margin-bottom: 50px;
+}
+#headTitle {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 25px;
+
+}
+.intro-info-text {
+    text-align: center;
+    font-family: Arial;
+    font-size: 18px;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+tbody tr:nth-child(odd){
+    background-color: #d3d3d3;
+}
+tbody tr:nth-child(even){
+     background-color: #a9a9a9;
+ }
+
 table, th, td {
-    border: 1px solid black;
+    height: 35px;
+    /*background-color: #d3d3d3;*/
+    border: 1px solid white;
     border-collapse: collapse;
     font-family: Arial;
     text-align: center;
@@ -25,7 +64,7 @@ table, th, td {
     padding-right: 20px;
 }
 #bottomRow {
-    border-top: 2px solid black;
+    border-top: 2px solid white;
 }
 .dropbtn {
     background: inherit;
@@ -33,12 +72,13 @@ table, th, td {
     padding-left: 30px;
     padding-right: 30px;
     font-size: 16px;
+    height: 35px;
     border: none;
     cursor: pointer;
 }
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+    background-color: rgba(255, 255, 255, 0.63);
 }
 
 /* The container <div> - needed to position the dropdown content */

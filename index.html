@@ -2,20 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Merit räknare</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="head">
+    <h1 id="headTitle">Merit uträknare</h1>
+</div>
 <table>
-    <tr class="TableTop">
-        <td class="TableTop" id="year">ÅK</td>
-        <td class="TableTop" id="course">Kurs</td>
-        <td class="TableTop">Poäng</td>
-        <td class="TableTop">Betyg</td>
-        <td class="TableTop">Siffervärde</td>
-        <td class="TableTop">Betygsvärde</td>
-        <td class="TableTop">Extra information</td>
-    </tr>
+    <thead class="TableTop">
+        <th class="TableTop" id="year">ÅK</th>
+        <th class="TableTop" id="course">Kurs</th>
+        <th class="TableTop">Poäng</th>
+        <th class="TableTop">Betyg</th>
+        <th class="TableTop">Siffervärde</th>
+        <th class="TableTop">Betygsvärde</th>
+        <th class="TableTop">Extra information</th>
+    </thead>
     <tr>
         <td>1</td>
         <td class="course">Svenska 1</td>
@@ -34,7 +37,7 @@
         <td id="gradeValue0">-</td>
         <td>Minst E för examen</td>
     </tr>
-    <tr>
+    <tr class="alternateRow">
         <td>1</td>
         <td class="course">Engelska 5</td>
         <td>100</td>
@@ -468,10 +471,13 @@
         <td></td>
         <td id="numberValue25">-</td>
         <td id="gradeValue25">-</td>
-        <td></td>
+        <td id="lastExtra"></td>
     </tr>
 
 </table>
+<div id="footer">
+    <p>hej</p>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

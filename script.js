@@ -1,4 +1,6 @@
 let courses = 24;
+var examReady = [false, false, false, false, false, false];
+var examReadyID = [0, 1, 2, 8, 9, 15];
 function myFunction(clicked_id) {
     document.getElementById("myDropdown" + clicked_id.substring(8)).classList.toggle("show");
 }
@@ -21,8 +23,6 @@ window.onclick = function(event) {
 }
 function selectGrade(clicked_id) {
     let number;
-    console.log(clicked_id.charAt(clicked_id.length-1))
-    console.log(clicked_id)
     switch (clicked_id.charAt(clicked_id.length-1)) {
         //Gymnasiearbete
         case "G": {
@@ -129,13 +129,24 @@ function selectGrade(clicked_id) {
     }
     let done = 0;
     let totalNumberValue = 0;
+    let totalGradeValue = 0;
     for (let i = 0; i < courses; i++) {
         if (!(document.getElementById("numberValue" + i).textContent == "-" || document.getElementById("numberValue" + i).textContent == "")) {
             done++;
             totalNumberValue += Number(document.getElementById("numberValue" + i).textContent);
+            totalGradeValue += Number(document.getElementById("gradeValue" + i).textContent)
+
         }
+    }
+    document.getElementById("lastExtra").textContent = "";
+    for (let i = 0; i < examReadyID.length; i++) {
+        if (document.getElementById("numberValue" + examReadyID[i]).textContent == "-" ||
+            document.getElementById("numberValue" + examReadyID[i]).textContent == "0")
+            examReady[i] = false; else examReady[i] = true;
+            if (examReady[i] == false) document.getElementById("lastExtra").textContent = "Du kan inte skriva examen";
     }
 
     document.getElementById("numberValue" + Number(courses+1)).textContent = Number(totalNumberValue/done);
+    document.getElementById("gradeValue" + Number(courses+1)).textContent = totalGradeValue;
 
 }
