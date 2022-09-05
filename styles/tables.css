@@ -1,0 +1,52 @@
+.TableTop {
+    font-family: Arial;
+    font-weight: bold;
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    background-color: #bdd0e7;
+
+}
+.intro-info-text {
+     text-align: center;
+     font-family: Arial;
+     font-size: 18px;
+ }
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+tbody tr:nth-child(odd){
+    background-color: #d3d3d3;
+}
+tbody tr:nth-child(even){
+    background-color: #a9a9a9;
+}
+
+table, th, td {
+    height: 35px;
+    /*background-color: #d3d3d3;*/
+    border: 1px solid white;
+    border-collapse: collapse;
+    font-family: Arial;
+    text-align: center;
+}
+#grade {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+#course {
+    padding-right: 150px;
+}
+.course {
+    text-align: left;
+    padding-left: 4px;
+}
+#year {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#bottomRow {
+    border-top: 2px solid white;
+}

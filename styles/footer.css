@@ -1,0 +1,38 @@
+.footer-container {
+    background-color: #212329;
+    padding-bottom: 2rem;
+    margin-top: 75px;
+    padding-top: 40px;
+}
+
+.footer {
+    background-color: #212329;
+    width: 80%;
+    height: 10vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2 {
+    margin-bottom: 1rem;
+}
+
+.footer-heading a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-heading a:hover {
+    color: #87CEEB;
+    transition: 0.5s ease-out;
+}

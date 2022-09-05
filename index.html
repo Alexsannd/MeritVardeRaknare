@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Merit räknare</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Merit uträknare</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/tables.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/dropdown.css">
 </head>
 <body>
 <div id="head">
@@ -14,7 +18,7 @@
         <th class="TableTop" id="year">ÅK</th>
         <th class="TableTop" id="course">Kurs</th>
         <th class="TableTop">Poäng</th>
-        <th class="TableTop">Betyg</th>
+        <th class="TableTop" id="grade">Betyg</th>
         <th class="TableTop">Siffervärde</th>
         <th class="TableTop">Betygsvärde</th>
         <th class="TableTop">Extra information</th>
@@ -475,8 +479,20 @@
     </tr>
 
 </table>
-<div id="footer">
-    <p>hej</p>
+<div class="footer-container">
+    <div class="footer">
+        <div class="footer-heading footer-1">
+            <h2>Kontakta oss</h2>
+            <a href="mailto:alexsannd.net">Mail</a>
+        </div>
+        <div class="footer-heading footer-2">
+            <h2>Andra project</h2>
+            <a href="https://github.com/alexsannd">GitHub</a>
+            
+        </div>
+
+
+    </div>
 </div>
 <script src="script.js"></script>
 </body>
